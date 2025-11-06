@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header {
+    padding: 20px 0;
+}
+
+header>.container {
+    padding: 0 40px;
+}
+
+.df {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 100%;
+}
+
+.h-logo {
+    font-family: Stem;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    color: #000;
+}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+nav>ul>li>a {
+    font-family: Stem;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: right;
+    vertical-align: middle;
+    color: #000000B2;
+}
+
+.h-contact {}
+
+.h-c {
+    margin: 0 32px 0 40px;
+}
+
+.h-c>span {
+    display: block;
+    font-family: Stem;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: right;
+    vertical-align: middle;
+    color: #000000B2;
+    margin-bottom: 4px;
+}
+
+.h-c>p {
+    font-family: Stem;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: right;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.h-c__btn {
+    font-family: Stem;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    background-color: #00BDF8;
+    border: none;
+}
+
+.s-hero {
+    background: linear-gradient(#1A236E80), url("../img/image.png") no-repeat center/cover;
+    padding: 210px 0 20px 0;
+    margin-bottom: 120px;
+}
+
+.s-hero-wrap {
+    max-width: 920px;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.s-hero-wrap>h1 {
+    font-family: Stem;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 68px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.s-hero-wrap>p {
+    font-family: Stem;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFFCC;
+    margin-bottom: 40px;
+}
+
+.s-hero-wrap>p:nth-child(4) {
+    font-family: Stem;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 110px;
+}
+
+.btns {
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.btns>button {
+    font-family: Stem;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 16px 32px;
+    background-color: #00BDF8;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+}
+
+.btns>button:nth-child(2) {
+    background-color: #fff;
+    color: #1A236E;
+}
+
+.s-group {
+    margin-bottom: 120px;
+}
+
+.s-group>.container {
+    padding: 0 165px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.s-group>.container>div {
+    /* max-width: 720px;  */
+    width: 100%;
+}
+
+.s-group>.container>div>span {
+    display: block;
+    font-family: Stem;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #00BDF8;
+    margin-bottom: 24px;
+}
+
+.s-group>.container>div>h2 {
+    font-family: Stem;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 68px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000;
+    margin-bottom: 24px;
+}
+
+.s-group>.container>div>p {
+    font-family: Stem;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000B2;
+    margin-bottom: 64px;
+}
+
+.group-wrapper {}
+
+.df {}
+
+.g-wrap {}
+
+.g-wrap>img {
+    margin-bottom: 24px;
+}
+
+.g-wrap>h3 {
+    font-family: Stem;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.g-wrap>p {
+    font-family: Stem;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #000000B2;
+}
+
+@media (max-width: 1440px) {
+    .group-wrapper {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1440px) {
+    nav {
+        display: none;
+    }
+}
