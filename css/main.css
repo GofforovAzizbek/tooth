@@ -432,10 +432,8 @@ nav>ul>li>a {
 }
 
 .s-cot-grid {
-    display: grid;
     grid-template-columns: repeat(3, calc(1100px / 3.12));
     justify-content: center;
-    gap: 30px;
 }
 
 .s-grid {
@@ -446,7 +444,13 @@ nav>ul>li>a {
     padding: 80px 0;
 }
 
+.dg {
+    display: grid;
+    gap: 30px;
+}
+
 .s-grids>.container {
+    grid-template-columns: repeat(2, 3fr);
     max-width: 1110px;
     width: 100%;
     padding: 0;
