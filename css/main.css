@@ -794,7 +794,7 @@ input[type="radio"]:checked::after {
     .s-per-boxs,
     .s-cot-grid,
     .dg {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
         gap: 15px;
     }
 
