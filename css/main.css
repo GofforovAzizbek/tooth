@@ -440,7 +440,6 @@ nav>ul>li>a {
 
 .s-grid {
     overflow: hidden;
-
 }
 
 .s-grids {
@@ -450,8 +449,128 @@ nav>ul>li>a {
 .s-grids>.container {
     max-width: 1110px;
     width: 100%;
+    padding: 0;
 }
 
+.s-blog {
+    padding: 100px 0;
+    background-color: #F7F8FA;
+}
+
+.s-blog>.container {
+    flex-direction: column;
+    padding: 0 170px;
+}
+
+.s-blog>.container>h2 {
+    font-family: Stem;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 68px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000;
+    margin-bottom: 24px;
+}
+
+.s-blog>.container>p {
+    font-family: Stem;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000B2;
+    margin-bottom: 80px;
+}
+
+.df {}
+
+.blog {
+    gap: 30px;
+    align-items: start;
+}
+
+.blog>div {
+    padding: 40px 32px;
+    flex-direction: column;
+    border: 1px solid #0000001A;
+    border-radius: 16px;
+}
+
+.blog>div>img {
+    margin-bottom: 24px;
+}
+
+.blog>div>p {
+    font-family: Stem;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000;
+    margin-bottom: 32px;
+    width: 400px;
+}
+
+.blog>div>h3 {
+    font-family: Stem;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000;
+    margin-bottom: 4px;
+}
+
+.blog>div>span {
+    font-family: Stem;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #00000066;
+}
+
+.s-concurent {
+    padding: 120px 0;
+}
+
+.s-concurent>.container {
+    flex-direction: column;
+}
+
+.s-concurent>.container>div>h2 {
+    font-family: Stem;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 68px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000;
+    margin-bottom: 24px;
+}
+
+.s-concurent>.container>div:nth-child(2) {
+    gap: 30px;
+}
+
+.s-concurent>.container>div>p {
+    font-family: Stem;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000B2;
+    margin-bottom: 64px;
+    padding: 0 360px;
+}
+
+.df {}
 
 .s-form {
     padding: 100px 0;
@@ -461,6 +580,7 @@ nav>ul>li>a {
 .s-form>.container {
     max-width: 540px;
     width: 100%;
+    padding: 0;
 }
 
 .s-form>.container>h3 {
@@ -506,7 +626,18 @@ form>input {
     outline: none;
     border: none;
     gap: 10px;
+}
 
+form>.label>p {
+    font-family: Stem;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #ffffff9c;
+    margin-top: 24px;
+    padding: 0 55px;
 }
 
 .label {
@@ -517,8 +648,48 @@ form>input {
     letter-spacing: 0%;
     color: #fff;
     margin-top: 20px;
-    margin-bottom: 10px;
-    gap: 8px;
+    /* margin-bottom: 10px; */
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.label>div>div {
+    display: flex;
+    gap: 16px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #00bfff;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all ease-in-out;
+}
+
+input[type="radio"]:not(:checked) {
+    background-color: transparent;
+}
+
+input[type="radio"]:checked {
+    background-color: #00bfff;
+    border-color: #00bfff;
+}
+
+input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
 }
 
 .footer {
