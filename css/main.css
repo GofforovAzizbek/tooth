@@ -752,12 +752,22 @@ input[type="radio"]:checked::after {
 }
 
 @media (max-width: 1024px) {
-    .group-wrapper, .s-per-boxs, .s-cot-grid, .dg {
-        grid-template-columns: repeat(2, 1fr);
+    .group-wrapper,
+    .s-per-boxs,
+    .s-cot-grid,
+    .s-cotalog
+    .dg {
+        grid-template-columns: repeat(1, 2fr);
         gap: 20px;
     }
 
-    .g-wrap, .s-per-box, .s-grid {
+    .s-concurent>.container>div:nth-child(2) {
+        flex-wrap: wrap;
+    }
+
+    .g-wrap,
+    .s-per-box,
+    .s-grid {
         text-align: center;
     }
 
@@ -770,15 +780,27 @@ input[type="radio"]:checked::after {
         width: 100%;
         padding: 30px;
     }
+
+    .s-grids>.container {
+        padding: 0 40px;
+        justify-content: center;
+        grid-template-columns: repeat(1, 2fr);
+    }
 }
 
 @media (max-width: 480px) {
-    .group-wrapper, .s-per-boxs, .s-cot-grid, .dg {
+
+    .group-wrapper,
+    .s-per-boxs,
+    .s-cot-grid,
+    .dg {
         grid-template-columns: 1fr;
         gap: 15px;
     }
 
-    .g-wrap, .s-per-box, .s-grid {
+    .g-wrap,
+    .s-per-box,
+    .s-grid {
         text-align: center;
     }
 
@@ -792,7 +814,11 @@ input[type="radio"]:checked::after {
         padding: 20px;
     }
 
-    .s-group, .s-per, .s-cotalog, .s-blog, .s-concurent {
+    .s-group,
+    .s-per,
+    .s-cotalog,
+    .s-blog,
+    .s-concurent {
         padding-left: 15px;
         padding-right: 15px;
     }
